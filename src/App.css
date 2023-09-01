@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 760px){
+  .top-nav .our-logo{
+    align-items: center;
+  }
+  .menu-links{
+    background-color: #111;
+    height: 100%;
+    position: fixed;
+    width: 200px;
+    left: -200px;
+    z-index: 10;
+    margin-top: 0;
+    transition: .6s;
+    padding-top: 40px;
+  }
+  .menu-links ul{
+    flex-direction: column;
+  }
+ 
+  .footer{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .footer .logo img{
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .top-nav .open-menu, .top-nav .menu-links .close-menu{
+    display: block;
+  }
+}
